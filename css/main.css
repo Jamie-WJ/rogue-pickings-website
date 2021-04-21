@@ -191,14 +191,12 @@ footer span {
 	.section-two,
 	.section-three {
 		border-top: .0625em solid #eee;
-		padding: .625em 1.5em;
+		padding: .625em 0 0 1.25em;
 		width: 100%;
 	}
 }
 
-/***Desktop Media Query***/
-
-@media all and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 	header {
 		width: 100%;
 		margin: 0 auto;
@@ -212,7 +210,7 @@ footer span {
 		padding: 1em 0;
 		border-bottom: none; 
 		text-align: left:
-	}
+	  }
 	
 	header nav {
 		padding-left: 14em;
@@ -225,6 +223,53 @@ footer span {
 		justify-content: flex-end;
 		align-items: flex-end;
 		flex-direction: row;
+	}
+
+	.main-title h2 {
+		text-align: left;
+		padding: .625em 1.5em 0 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: row;	
+	}
+	
+	.main-title p {
+		padding: .625em 1.5em 0 0;
+		text-align: left;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: row;
+	}
+	
+	.bottom-section {
+		flex-basis: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-flow: row nowrap;
+	}	
+	
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+	}
+	
+	.section-one{
+		padding-left: 0;
+	}
+	
+	.section-two {
+		   border-left: .0625em solid #eee;
+		   border-right: .0625em solid #eee;
+	}
+	
+	footer {
+		padding-top:.5em;
+		border-top: .0625em solid #eee;
+		width: 100%
 	}
 	
 }
